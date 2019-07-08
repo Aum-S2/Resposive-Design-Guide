@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox Align</title>
+
+  <style> 
+    #container {
+      background-color: darkorange;
+      display: flex;
+      justify-content: space-evenly;
+
+      /* options:
+      flex-start
+      flex-end
+      center
+      space-around
+      space-between
+      space-evenly */
+
+      height: 490px;
+      align-items: flex-end;
+
+      /* options:
+      flex-start
+      flex-end
+      center
+      baseline
+      stretch */
+
+    }
+
+    .item {
+      background: tomato;
+      border: 1px solid sandybrown;
+      text-align: center;
+      padding: 1.2rem;
+      margin: 0.4rem;
+      flex-basis: 190px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div class="item item-1"><h3>Item 1</h3></div>
+    <div class="item item-2"><h3>Item 2</h3></div>
+    <div class="item item-3"><h3>Item 3</h3></div>
+  </div>
+  
+</body>
+</html>
