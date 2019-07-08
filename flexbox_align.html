@@ -10,6 +10,7 @@
     #container {
       background-color: darkorange;
       display: flex;
+      /* flex-wrap: wrap; */
 
       /* horizontal y-axis*/
       justify-content: space-evenly;
@@ -24,7 +25,7 @@
 
       /* vertical x-axis (must be a height) */
       height: 490px;
-      align-items: flex-end;
+      align-items: baseline;
 
       /* options:
       flex-start
@@ -33,6 +34,36 @@
       baseline
       stretch */
 
+      /* align-items: vertical where extra space */
+      align-content: space-between;
+
+      /* options:
+      flex-start
+      flex-end
+      center
+      baseline
+      stretch */
+    }
+
+    .item-1 {
+      order: 3;
+    }
+
+    .item-2 {
+      /* align single item vertical */
+      align-self: flex-end;
+      order: 2;
+
+      /* options:
+      flex-start
+      flex-end
+      center
+      baseline
+      stretch */
+    }
+
+    .item-3 {
+      order: 1;
     }
 
     .item {
@@ -43,6 +74,7 @@
       margin: 0.4rem;
       flex-basis: 190px;
     }
+
   </style>
 </head>
 
@@ -51,6 +83,13 @@
     <div class="item item-1"><h3>Item 1</h3></div>
     <div class="item item-2"><h3>Item 2</h3></div>
     <div class="item item-3"><h3>Item 3</h3></div>
+    <!-- <div class="item item-3"><h3>Item 4</h3></div>
+    <div class="item item-3"><h3>Item 5</h3></div>
+    <div class="item item-3"><h3>Item 6</h3></div>
+    <div class="item item-3"><h3>Item 7</h3></div>
+    <div class="item item-3"><h3>Item 8</h3></div>
+    <div class="item item-3"><h3>Item 9</h3></div>
+    <div class="item item-3"><h3>Item 10</h3></div> -->
   </div>
   
 </body>
